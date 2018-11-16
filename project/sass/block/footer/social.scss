@@ -1,0 +1,15 @@
+.social {
+	display: flex;
+}
+
+.social__link {
+	display: inline-block;
+	width: 30%;
+	flex-grow: 1;
+	height: 98px;
+
+	border: 1px solid #969696;
+	
+	font-size: 0px;
+	/*делать иконку буду через background*/
+}

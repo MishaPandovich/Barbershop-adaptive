@@ -1,0 +1,28 @@
+.menu {
+	height: 50px;
+	position: relative;
+	background-color: #826550;
+	border: 1px solid transparent;
+}
+
+.menu__caption {
+	margin-top: 15px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #ffffff;
+	text-align: center; 
+	text-transform: uppercase;
+}
+
+.menu__open {
+	width: 70px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #6a4d38;
+	font-size: 0;
+	border: none;
+	outline: none; 
+}

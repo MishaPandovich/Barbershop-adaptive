@@ -1,0 +1,35 @@
+.stats__header {
+	background: #f8f5f2;
+}
+
+.stats__slogan {
+	font-size: 20px;
+	line-height: 27px;
+	text-align: center;
+}
+
+.stats__table {
+	width: 100%;
+	color: #ffffff;
+	background: #404040;
+}
+
+.stats__number {
+	/*временно, потом продумаю*/
+	padding-top: 15px;
+	padding-bottom: 15px;
+	/*временно, потом продумаю*/
+
+	font-size: 40px;
+	line-height: 18px;
+	font-weight: 700;
+}
+
+.stats__value {
+	width: 105px;
+	border: 1px solid red;
+
+	font-size: 18px;
+	text-align: right;
+	line-height: 18px;
+}

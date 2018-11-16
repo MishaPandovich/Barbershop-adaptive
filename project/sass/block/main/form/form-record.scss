@@ -1,0 +1,93 @@
+// стили placeholder`a у кнопок
+/* webkit */
+.form-record input::-webkit-input-placeholder {
+  font-family: 'PT Sans Narrow', 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+/* Firefox 19+ */
+.form-record input::-moz-placeholder {
+  font-family: 'PT Sans Narrow', 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+/* Firefox 18- */
+.form-record input:-moz-placeholder {
+  font-family: 'PT Sans Narrow', 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+/* IE */
+.form-record input:-ms-input-placeholder {
+  font-family: 'PT Sans Narrow', 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+// стили placeholder`a у textarea
+.form-record textarea::-webkit-input-placeholder {
+  font-family: 'PT Sans Narrow', 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+/* Firefox 19+ */
+.form-record textarea::-moz-placeholder {
+  font-family: 'PT Sans Narrow', 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+/* Firefox 18- */
+.form-record textarea:-moz-placeholder {
+  font-family: 'PT Sans Narrow', 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+/* IE */
+.form-record textarea:-ms-input-placeholder {
+  font-family: 'PT Sans Narrow', 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+/*
+.form-record input {
+	height: 50px;
+	padding-top: 15px;
+	padding-left: 15px;
+	border: 1px solid #969696;
+	box-sizing: 
+}
+
+.form-record textarea {
+	height: 50px;
+	padding-top: 15px;
+	padding-left: 15px;
+	border: 1px solid #969696;
+}*/
+
+.form-record__group {
+	border: none;
+}
+
+.form-record__submit {
+	height: 50px;
+	color: #ffffff;
+	background: #826550;
+	font-weight: 700;
+	text-transform: uppercase;
+	border: none;
+}

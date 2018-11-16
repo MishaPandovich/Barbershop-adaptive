@@ -1,0 +1,36 @@
+.group-add-services__label {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+  margin-left: 60px;
+
+  font-weight: 700;
+}
+
+.group-add-services__input {
+  display: none;
+}
+
+.group-add-services__input + label::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -55px;
+  width: 35px;
+  height: 35px;
+
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+.group-add-services__input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: -55px;
+  width: 18px;
+  height: 18px;
+
+  border-radius: 100%;
+  background: #000000;
+}

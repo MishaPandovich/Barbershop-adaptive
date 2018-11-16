@@ -3,8 +3,129 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Barbershop «Borodinski»</title>
+	<!--временно, пока не скачаю woff файлы-->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	
+	<header class="header">
+		<div class="logo">
+			<img class="logo__img" src="img/" width="230" height="40" alt="Логотип «Borodinski»">
+		</div>
+		<div class="menu">
+			<h3 class="menu__caption">Главная</h3>
+			<button class="menu__open" href="#">Показать меню</button>
+			<nav class="nav">
+				<ul class="nav__list site-list">
+					<li class="site-list__item"><a href="#">Главная</a></li>
+					<li class="site-list__item"><a href="catalog.html">Наши работы</a></li>
+					<li class="site-list__item"><a href="form.html">Записаться</a></li>
+					<li class="site-list__item"><a href="#">Контакты</a></li>
+				</ul>
+				<ul class="nav__list user-list">
+					<li class="user-list__item"><a class="user-list__login" href="#">Войти</a></li>
+				</ul>
+				<button class="nav__close">Закрыть меню</button>
+			</nav>
+		</div>
+	</header>
+	<main class="main">
+		<div class="stats">
+			<h2 class="visually-hidden">Статистика Барбершопа</h2>
+			<header class="stats__header">
+				<h2 class="caption stats__caption">Стрижка у нас<br> это выгодно!</h2>
+				<p class="stats__slogan">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+			</header>
+			<table class="stats__table">
+				<tr class="stats__row">
+					<td class="stats__number">1500<sup>*</sup></td>
+					<td class="stats__value">рублей вложении</td>
+				</tr>
+				<tr class="stats__row">
+					<td class="stats__number">7200</td>
+					<td class="stats__value">секунд времени мастера</td>
+				</tr>
+				<tr class="stast__row">
+					<td class="stats__number">90000</td>
+					<td class="stats__value">постриженных волос</td>
+				</tr>
+				<tr class="stats__row">
+					<td class="stats__number">500000<sup>*</sup></td>
+					<td class="stats__value">лайков и комлиментов</td>
+				</tr>
+			</table>
+		</div>
+		<div class="advantages slider">
+			<h2 class="visually-hidden">Наши преимущества</h2>
+			<ul class="advantages__list slider__list">
+				<li class="advantages__item advantages__item--fast slider__item slider__item--active">
+					<h3 class="caption advantages__caption">Быстро</h3>
+					<p class="advantages__description">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки.</p>
+				</li>
+				<li class="advantages__item advantages__item--cool slider__item">
+					<h3 class="caption advantages__caption">Круто</h3>
+					<p class="advantages__description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</p>
+				</li>
+				<li class="advantages__item advantages__item--price slider__item">
+					<h3 class="caption advantages__caption">Дорого</h3>
+					<p class="advantages__description">Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
+				</li>
+			</ul>
+			<div class="slider__toggles">
+				<button class="slider__toggle" type="button">1</button>
+				<button class="slider__toggle" type="button">2</button>
+				<button class="slider__toggle" type="button">3</button>
+			</div>
+		</div>
+		<div class="news">
+			<h2 class="caption news__caption">Новости и акции</h2>
+			<ul class="news__list">
+				<li class="news__item">
+					<time class="news__date" datetime="2018-09-29"><b class="news__day">29</b>сент</time>
+					<p class="news__text">Нам наконец-то завезли Егермейстер! Теперь вы можете пропустить стаканчик во время стрижки.</p>
+				</li>
+				<li class="news__item">
+					<time class="news__date" datetime="2018-09-19"><b class="news__day">19</b>сент</time>
+					<p class="news__text">Нам наконец-то завезли Егермейстер! Теперь вы можете пропустить стаканчик во время стрижки.</p>
+				</li>
+			</ul>
+			<a class="bnt news__button" href="#">Показать все</a>
+		</div>
+		<div class="comments slider-comment">
+			<h2 class="caption comments__caption">Отзывы о нас</h2>
+			<a class="bnt comments__button" href="#">Оставить свой</a>
+			<ul class="comments__list slider-comment__list">
+				<li class="comments__item slider-comment__item">
+					<img class="comments__userpic" src="#" alt="аватарка пользователя" width="48" height="46">
+					<h3 class="comments__user">Трэвис Баркер</h3>
+					<p class="comments__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+				</li>
+			</ul>
+			<button class="bnt comments__button comments__button--next" type="button">Вперёд</button>
+			<button class="bnt comments__button comments__button--prev" type="button">Назад</button>
+			<div class="comments__toggles slider__toggles">
+				<button class="comments__toggle slider__toggle" type="button">1</button>
+				<button class="comments__toggle slider__toggle" type="button">2</button>
+				<button class="comments__toggle slider__toggle" type="button">3</button>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="contacts">
+			<h1 class="contacts__company-name">Барбершоп Бородинский</h1>
+			<p class="conatcts__adress">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+			<a class="contacts__phone" href="#">+7 (812) 555-66-66</a>
+		</div>
+		<div class="social">
+			<a class="social__link social__link--vk" href="#">Вконтакте</a>
+			<a class="social__link social__link--fb" href="#">Facebook</a>
+			<a class="social__link social__link--inst" href="#">Instagramm</a>
+		</div>
+		<div class="copyright">
+			<span class="copyright__text">Разработано:</span>
+			<a class="copyright__link" href="#">Html Academy</a>
+		</div>
+	</footer>
 </body>
 </html>

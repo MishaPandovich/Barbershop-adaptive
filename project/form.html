@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Barbershop «Borodinski»</title>
+	<!--временно, пока не скачаю woff файлы-->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="logo">
+			<img class="logo__img" src="img/" width="230" height="40" alt="Логотип «Borodinski»">
+		</div>
+		<div class="menu">
+			<h3 class="menu__caption">Главная</h3>
+			<button class="menu__open" href="#">Показать меню</button>
+			<nav class="nav">
+				<ul class="nav__list site-list">
+					<li class="site-list__item"><a href="#">Главная</a></li>
+					<li class="site-list__item"><a href="#">Наши работы</a></li>
+					<li class="site-list__item"><a href="#">Записаться</a></li>
+					<li class="site-list__item"><a href="#">Контакты</a></li>
+				</ul>
+				<ul class="nav__list user-list">
+					<li class="user-list__item"><a class="user-list__login" href="#">Войти</a></li>
+				</ul>
+				<button class="nav__close">Закрыть меню</button>
+			</nav>
+		</div>
+	</header>
+	<main class="main">
+		<div class="record">
+			<h2 class="caption record__caption">Запись на стрижку</h2>
+			<a class="bnt record__button" href="#">На главную</a>
+			<form class="form-record" action="#" method="post">
+				<fieldset class="group-fio form-record__group">
+					<legend class="visually-hidden">Напишите полное имя</legend>
+					<input class="input group-fio__input" type="text" name="surname-user" placeholder="Фамилия">
+					<input class="input group-fio__input" type="text" name="name-user" placeholder="Имя">
+					<input class="input group-fio__input" type="text" name="patronymic-user" placeholder="Отчество">
+				</fieldset>
+				<fieldset class="group-contacts form-record__group">
+					<legend class="visually-hidden">Напишите контактные данные</legend>
+					<input class="input group-contacts__input" type="text" name="phone" placeholder="Контактный телефон">
+					<input class="input group-contacts__input" type="text" name="email" placeholder="Контактный e-mail">
+				</fieldset>
+				<fieldset class="group-add-info form-record__group">
+					<legend class="visually-hidden">Напишите дополнительную информацию для мастера</legend>
+					<textarea class="group-add-info__textarea" placeholder="Доп. информация для мастера" width="280" height="110"></textarea>
+				</fieldset>
+				<fieldset class="group-beards form-record__group">
+					<legend class="group-beards__caption">Выберите модель бороды:</legend>
+					<div class="group-beards__wrapper-flex">
+						<input class="input group-beards__input group-beards__input--type-beard-admiral" type="radio" name="beard" value="type-admiral" id="admiral" checked>
+						<label class="label group-beards__label" for="admiral">Адмирал
+							<div class="group-beards__label-decoration"></div>
+						</label>
+						
+						<input class="input group-beards__input group-beards__input--type-beard-logger" type="radio" name="beard" value="type-logger" id="logger">
+						<label class="label group-beards__label" for="logger">Лесоруб
+							<div class="group-beards__label-decoration"></div>
+						</label>
+						
+						<input class="input group-beards__input group-beards__input--type-beard-polar" type="radio" name="beard" value="type-polar" id="polar">
+						<label class="label group-beards__label" for="polar">Полярник
+							<div class="group-beards__label-decoration"></div>
+						</label>
+					
+						<input class="input group-beards__input group-beards__input--type-beard-boyar" type="radio" name="beard" value="type-boyar" id="boyar">
+						<label class="label group-beards__label" for="boyar">Боярин
+							<div class="group-beards__label-decoration"></div>
+						</label>
+				
+						<input class="input group-beards__input group-beards__input--type-beard-sage" type="radio" name="beard" value="type-sage" id="sage">
+						<label class="label group-beards__label" for="sage">Мудрец
+							<div class="group-beards__label-decoration"></div>
+						</label>
+					</div>
+				</fieldset> 
+				<fieldset class="group-add-services form-record__group">
+					<legend class="group-beards__caption">Дополнительные услуги:</legend>
+					<div class="group-add-services__wrapper-flex">
+						<input class="input group-add-services__input" type="checkbox" name="add-services" value="beard-coloring" id="beard-coloring" checked>
+						<label class="label group-add-services__label" for="beard-coloring">Подкрасить бороду</label>
+						
+						<input class="input group-add-services__input" type="checkbox" name="add-services" value="mustache-cheat" id="mustache-cheat" checked>
+						<label class="label group-add-services__label" for="mustache-cheat">Накрутить усы</label>
+						
+						<input class="input group-add-services__input" type="checkbox" name="add-services" value="beard-comb" id="beard-comb">
+						<label class="label group-add-services__label" for="beard-comb">Причесать бороду</label>
+						
+						<input class="input group-add-services__input" type="checkbox" name="add-services" value="haircut-temples" id="haircut-temples">
+						<label class="label group-add-services__label" for="haircut-temples">Подровнять виски</label>
+						
+						<input class="input group-add-services__input" type="checkbox" name="add-services" value="hair-coloring" id="hair-coloring">
+						<label class="label group-add-services__label" for="hair-coloring">Убрать седину</label>
+						
+						<input class="input group-add-services__input" type="checkbox" name="add-services" value="head-polishing" id="head-polishing">
+						<label class="label group-add-services__label" for="head-polishing">Отполировать лысину</label>
+					</div>
+				</fieldset>
+				<button class="form-record__submit" type="submit">Отправить заявку</button>
+			</form>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="contacts">
+			<h1 class="contacts__company-name">Барбершоп Бородинский</h1>
+			<p class="conatcts__adress">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+			<a class="contacts__phone" href="#">+7 (812) 555-66-66</a>
+		</div>
+		<div class="social">
+			<a class="social__link social__link--vk" href="#">Вконтакте</a>
+			<a class="social__link social__link--fb" href="#">Facebook</a>
+			<a class="social__link social__link--inst" href="#">Instagramm</a>
+		</div>
+		<div class="copyright">
+			<span class="copyright__text">Разработано</span>
+			<a class="copyright__link" href="#">Html Academy</a>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,34 @@
+.catalog__button {
+	display: none;
+}
+
+.catalog__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.catalog__item {
+	border: 1px solid #e5ddd5;
+}
+
+.catalog__photo {
+	display: block;
+	margin-top: -1px;
+	width: 280px;
+	border: 1px solid red;
+}
+
+.catalog__client-name {
+	font-size: 24px;
+	line-height:27px;
+	font-weight: 700;
+}
+
+.services__item {
+	display: inline-block;
+	position: relative;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+}

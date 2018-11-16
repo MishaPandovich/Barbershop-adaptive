@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Barbershop «Borodinski»</title>
+	<!--временно, пока не скачаю woff файлы-->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="logo">
+			<img class="logo__img" src="img/" width="230" height="40" alt="Логотип «Borodinski»">
+		</div>
+		<div class="menu">
+			<h3 class="menu__caption">Главная</h3>
+			<button class="menu__open" href="#">Показать меню</button>
+			<nav class="nav">
+				<ul class="nav__list site-list">
+					<li class="site-list__item"><a href="#">Главная</a></li>
+					<li class="site-list__item"><a href="#">Наши работы</a></li>
+					<li class="site-list__item"><a href="#">Записаться</a></li>
+					<li class="site-list__item"><a href="#">Контакты</a></li>
+				</ul>
+				<ul class="nav__list user-list">
+					<li class="user-list__item"><a class="user-list__login" href="#">Войти</a></li>
+				</ul>
+				<button class="nav__close">Закрыть меню</button>
+			</nav>
+		</div>
+	</header>
+	<main class="main">
+		<div class="catalog">
+			<h2 class="caption catalog__caption">Наши работы</h2>
+			<a class="bnt catalog__button" href="#">На главную</a>
+			<ul class="catalog__list">
+				<li class="catalog__item catalog__item--main">
+					<picture class="catalog__photo">
+            <source media="(min-width: 1190px)" src="img/photo-1-mobile.jpg">
+            <source media="(min-width: 768px)" src="img/photo-1-mobile.jpg">
+            <img src="img/photo-1-mobile.jpg"  src="#" alt="фото стрижки" width="100%" height="480">
+          </picture>
+					<b class="catalog__client-name">Лжепётр Мчиславский</b>
+					<p class="catalog__client-comment">Где я только не стригся, но так как делаете это вы - не умеет никто другой! Ещё раз спасибо и до скорого!</p>
+					<div class="services catalog__services">
+						<b class="services__item services__item--haircuts">Стрижка</b>
+						<b class="services__item services__item--shaving">Бритье</b>
+						<b class="services__item services__item--moustache">Усы</b>
+					</div>
+				</li>
+				<li class="catalog__item catalog__item--main">
+					<picture class="catalog__photo">
+            <source media="(min-width: 1190px)" src="img/photo-2-mobile.jpg">
+            <source media="(min-width: 768px)" src="img/photo-2-mobile.jpg">
+            <img src="img/photo-2-mobile.jpg"  src="#" alt="фото стрижки" width="100%" height="175">
+          </picture>
+					<b class="catalog__client-name">Саша Мальцев</b>
+					<p class="catalog__client-comment">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</p>
+					<div class="services catalog__services">
+						<b class="services__item services__item--haircuts">Стрижка</b>
+					</div>
+				</li>
+				<li class="catalog__item catalog__item--main">
+					<picture class="catalog__photo">
+            <source media="(min-width: 1190px)" src="img/photo-3-mobile.jpg">
+            <source media="(min-width: 768px)" src="img/photo-3-mobile.jpg">
+            <img src="img/photo-3-mobile.jpg"  src="#" alt="фото стрижки" width="100%" height="175">
+          </picture>
+					<b class="catalog__client-name">Владимир Иваныч</b>
+					<p class="catalog__client-comment">К зимнему сезону - готов!</p>
+					<div class="services catalog__services">
+						<b class="services__item services__item--beard">Борода</b>
+						<b class="services__item services__item--moustache">Усы</b>
+					</div>
+				</li>
+				<li class="catalog__item catalog__item--main">
+					<picture class="catalog__photo">
+            <source media="(min-width: 1190px)" src="img/photo-4-mobile.jpg">
+            <source media="(min-width: 768px)" src="img/photo-4-mobile.jpg">
+            <img src="img/photo-4-mobile.jpg"  src="#" alt="фото стрижки" width="100%" height="175">
+          </picture>
+					<b class="catalog__client-name">Винстон Синий</b>
+					<p class="catalog__client-comment">Как только зарастаю и волосы начинают мешать видеть - бегом в Бородинский!</p>
+					<div class="services catalog__services">
+						<b class="services__item services__item--haircuts">Стрижка</b>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="pricelist">
+			<h2 class="caption pricelist__caption">Прейскурант</h2>
+			<table class="pricelist__table">
+				<tr class="pricelist__row">
+					<td class="pricelist__row-number">1</td>
+					<td class="pricelist__service-name">Классическая стрижка<br><span>(с мытьём головы)</span></td>
+					<td class="pricelist__add-info">с мытьём головы</td>
+					<td class="pricelist__price">1500 руб.</td>
+				</tr>
+				<tr class="pricelist__row">
+					<td class="pricelist__row-number">2</td>
+					<td class="pricelist__service-name">Современный вариант<br><span>(с мытьём головы)</span></td>
+					<td class="pricelist__add-info">с мытьём головы</td>
+					<td class="pricelist__price">1500 руб.</td>
+				</tr>
+				<tr class="pricelist__row">
+					<td class="pricelist__row-number">3</td>
+					<td class="pricelist__service-name">Индивидуальный подход<br><span>(с мытьём головы)</span></td>
+					<td class="pricelist__add-info">с мытьём головы</td>
+					<td class="pricelist__price">2000 руб.</td>
+				</tr>
+				<tr class="pricelist__row">
+					<td class="pricelist__row-number">4</td>
+					<td class="pricelist__service-name">Бритьё головы<br><span>(без мытья)</span></td>
+					<td class="pricelist__add-info">без мытья</td>
+					<td class="pricelist__price">500 руб.</td>
+				</tr>
+				<tr class="pricelist__row">
+					<td class="pricelist__row-number">5</td>
+					<td class="pricelist__service-name">Бритьё головы<br><span>(с мытьём головы)</span></td>
+					<td class="pricelist__add-info">с мытьём головы</td>
+					<td class="pricelist__price">1000 руб.</td>
+				</tr>
+			</table>
+			<div class="discount">
+				<!--посмотреть как делаются анимированные часы-->
+				<img class="discount__clock" src="#">
+				<p class="discount__text">с 10:00 до 14:00 скидка 20%</p>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="contacts">
+			<h1 class="contacts__company-name">Барбершоп Бородинский</h1>
+			<p class="conatcts__adress">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+			<a class="contacts__phone" href="#">+7 (812) 555-66-66</a>
+		</div>
+		<div class="social">
+			<a class="social__link social__link--vk" href="#">Вконтакте</a>
+			<a class="social__link social__link--fb" href="#">Facebook</a>
+			<a class="social__link social__link--inst" href="#">Instagramm</a>
+		</div>
+		<div class="copyright">
+			<span class="copyright__text">Разработано</span>
+			<a class="copyright__link" href="#">Html Academy</a>
+		</div>
+	</footer>
+</body>
+</html>

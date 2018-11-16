@@ -1,0 +1,72 @@
+.group-beards__caption {
+	font-size: 20px;
+	line-height: 27px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.group-beards__label {
+	display: inline-block;
+	position: relative;
+	/*сделано,чтобы бороды появлялись по умолчанию*/
+	padding-top: 70px;
+	padding-bottom: 125px;
+	margin-right: 22px;
+
+	font-weight: 700;
+	text-transform: lowercase;
+}
+
+.group-beards__label:nth-child(3n) {
+	margin-right: 0;
+}
+
+.group-beards__input {
+	display: none;
+}
+
+.group-beards__input + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 55px;
+  height: 53px;
+
+  border-radius: 100%;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+.group-beards__input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 18px;
+  width: 18px;
+  height: 18px;
+
+  border-radius: 100%;
+  border: 1px solid #e5e5e5;
+}
+
+.group-beards__label-decoration::after {
+	content: "";
+	position: absolute;
+	top: 105px;
+	width: 65px;
+	height: 105px;
+
+	background: red;
+}
+
+/*
+.form-filters__input:hover + label,
+.form-filters__input:focus + label {
+    color: #663d15;
+}
+
+.form-filters__input:disabled + label {
+    color: #000000;
+
+    opacity: 0.5;
+}*/

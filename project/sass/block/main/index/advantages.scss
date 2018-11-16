@@ -1,0 +1,30 @@
+.advantages {
+	color: #ffffff;
+	background: #353535;
+}
+
+.advantages__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.advantages__item {
+	text-align: center;
+	border: 1px solid transparent;
+}
+
+.advantages__caption {
+	position: relative;
+	margin-top: 205px;
+}
+
+.advantages__caption::before {
+	content: "";
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: -120px;
+	
+	background: red;
+}

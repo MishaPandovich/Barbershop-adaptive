@@ -1,0 +1,30 @@
+.slider__item {
+	display: none;
+
+	&--active {
+		display: block;
+	}
+}
+
+.slider__toggles {
+	display: flex;
+	justify-content: center;
+	border: 1px solid red;
+}
+
+.slider__toggle {
+	width: 7px;
+	height: 7px;
+	padding: 0;
+	margin-right: 20px;
+
+	background: transparent;
+	transform: rotate(45deg);
+	font-size: 0;
+	border: 1px solid #969696;
+	outline: none; 
+}
+
+.slider__toggle:nth-last-child(1) {
+	margin-right: 0;
+}

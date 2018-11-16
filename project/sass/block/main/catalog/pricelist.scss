@@ -1,0 +1,17 @@
+.pricelist {
+	color: #ffffff;
+	background: #353535;
+}
+
+.pricelist__row-number,
+.pricelist__add-info {
+	display: none;
+}
+
+.pricelist__service-name {
+	font-weight: 700;
+}
+
+.pricelist__service-name span {
+	font-weight: 400;
+}
